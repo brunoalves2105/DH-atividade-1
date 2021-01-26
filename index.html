@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>atividade</title>
+    <title>Meu primeiro site</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
     <header class="header">
-        <a href="#home">Meu primeiro site</a>
+        <a class="brand" href="index.html">
+            <i class="large material-icons">devices</i>
+            Meu primeiro site</a>
         <nav>
             <ul class="menu">
                 <li>
@@ -29,6 +32,56 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <div class="carousel">
+            <button class="btn" id="back">
+                <i class="large material-icons">fast_rewind</i>
+            </button>
+            <img src="./img/slide-2.jpg" width="1100px">
+            <button class="btn" id="back">
+                <i class="large material-icons">fast_forward</i>
+            </button>
+        </div>
+        <div class="sobre" id="sobre">
+            <h2>Sobre</h2>
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim nesciunt nihil quis fuga ut eaque
+                    deleniti quas? Expedita molestias vitae perferendis. Minima in sapiente dolore nulla impedit
+                    veritatis laborum accusantium id nisi est officia optio atque praesentium, quia incidunt architecto,
+                    esse, mollitia laboriosam reprehenderit explicabo. Amet, fugiat earum at impedit minima quibusdam
+                    libero sapiente facere omnis voluptatem rerum magni illum maxime facilis voluptatum recusandae
+                    laboriosam sunt, non expedita quod vel explicabo, ducimus enim. Similique velit voluptatibus atque,
+                    sit tempora qui. Ab dolore corrupti necessitatibus vero ut, blanditiis in, quis amet, maiores
+                    repudiandae provident iste tenetur accusamus nisi est et.</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ut dolores nostrum hic,
+                    praesentium, consequatur excepturi fugit ex officiis blanditiis velit atque eius porro doloremque
+                    eos. Adipisci recusandae consectetur voluptates ad, natus, quos, non laborum obcaecati voluptatem et
+                    porro error aliquid assumenda ipsum reprehenderit. Aperiam, modi. Saepe obcaecati tempora numquam a
+                    ad dolores voluptas, at harum alias asperiores nostrum, delectus nam voluptate doloribus quam
+                    deserunt ipsa iure esse pariatur. Tenetur iure odio qui. Dicta quisquam adipisci maiores numquam
+                    voluptate excepturi. Harum unde doloribus porro, ad est voluptatibus dolorum dignissimos quasi
+                    ducimus ullam eaque, sit aliquid id voluptatem quaerat suscipit explicabo!
+                </p>
+            </article>
+        </div>
+        <div id="contato" class="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input id="nome" type="text" name="nome" placeholder="ex: jose alves">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="ex: jose_alves@gmail.com">
+            </form>
+            <div class="mensagem">
+                <textarea id="mensagem" placeholder="Mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </div>
+    </main>
+    <footer>
+        <i class="large material-icons">copyright</i>
+        Desenvolvido por Bruno Simplicio</footer>
 </body>
 
 </html>
