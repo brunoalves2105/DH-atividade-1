@@ -44,10 +44,11 @@
                         <a href="#contato" class="nav-link">Contato</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#cadastre-se" class="nav-link">Cadastre-se</a>
+                        <a href="#cadastre-se" class="nav-link" data-toggle="modal"
+                            data-target="#siteModal">Cadastre-se</a>
                     </li>
                     <li class="navbar-item">
-                        <a href="#login" class="nav-link">Login</a>
+                        <a href="#login" class="nav-link" data-toggle="modal" data-target="#modalLogin">Login</a>
                     </li>
                 </ul>
 
@@ -135,7 +136,8 @@
         <div class="container bg-primary text-light" id="sobre">
             <h2 class="pt-5 pl-4">Sobre</h2>
             <article class="p-4">
-                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim nesciunt nihil quis fuga ut eaque
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. A enim nesciunt nihil
+                    quis fuga ut eaque
                     deleniti quas? Expedita molestias vitae perferendis. Minima in sapiente dolore nulla impedit
                     veritatis laborum accusantium id nisi est officia optio atque praesentium, quia incidunt architecto,
                     esse, mollitia laboriosam reprehenderit explicabo. Amet, fugiat earum at impedit minima quibusdam
@@ -166,7 +168,8 @@
                         </div>
                         <div class="col-6">
                             <label for="email">Email:</label>
-                            <input class="w-75 ml-2" id="email" type="email" name="email" placeholder="ex: jose_alves@gmail.com">
+                            <input class="w-75 ml-2" id="email" type="email" name="email"
+                                placeholder="ex: jose_alves@gmail.com">
                         </div>
                     </div>
                 </div>
@@ -184,6 +187,94 @@
         <i class="large material-icons">copyright</i>
         Desenvolvido por Bruno Simplicio</footer>
 
+    <!-- Modal Cadastre-se -->
+
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header bg-light text-primary text-center">
+                    <h5 class="modal-title ">Cadastre-se</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body bg-primary text-light">
+                    <div class="row text-center">
+                        <img src="./img/avatarPerfil.jpg" width="25%" class="avatar">
+                    </div>
+                    <div class="form-group text-center ">
+                        <div class="row m-4">
+                            <div class="col-12">
+                                <label for="nome" class="pl-2">Nome: </label>
+                                <input type="text" name="nome" id="nome" placeholder="ex: jose donizete">
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="pl-2">Email: </label>
+                                <input type="email" name="email" id="email" placeholder="ex: jose_donizete@gmail">
+                            </div>
+                            <div class="col-12">
+                                <label for="senha">Senha: </label>
+                                <input type="password" name="senha" id="senha" placeholder="*****">
+                            </div>
+                        </div>
+                        <div class="row btnCad">
+                            <button type="submit" class="btn btn-dark btnForm">
+                                <span>Cadastrar</span>
+                            </button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                <span>Cancelar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Login -->
+
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header bg-light text-primary">
+                    <h5 class="modal-title">Login</h5>
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body bg-primary text-light">
+                    <div class="fomr-group text-center">
+                        <div class="row m-4">
+                            <img src="./img/avatarPerfil.jpg" width="25%" class="avatar">
+                            <div class="col-12">
+                                <label for="#email" class="pl-2 mt-2">Email: </label>
+                                <input type="email" id="email" name="email" placeholder="ex: jose_simplicio@gmail">
+                            </div>
+                            <div class="col-12">
+                                <label for="#senha" class="pl-2 mt-2">Senha: </label>
+                                <input class="mb-2" type="password" id="senha" name="senha" placeholder="******">
+                            </div>
+                            <a href="#" class="text-light text-center">esqueceu a senha ? clique aqui</a>
+                        </div>
+                        <div class="row btnCad">
+                            <button class="btn btn-dark"> 
+                                <span>Entrar</span>
+                            </button>
+                            <button class="btn btn-danger" data-dismiss="modal"> 
+                                <span>Cancelar</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 

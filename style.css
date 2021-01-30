@@ -7,6 +7,13 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-    height: 300px;
+.avatar {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.btnCad {
+    display: flex;
+    justify-content: space-around;
 }
